@@ -2,7 +2,7 @@ import Home from "./pages/home/Home";
 import Topbar from "./components/topbar/Topbar";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write"
-import settings from "./pages/settings/Settings"
+//import settings from "./pages/settings/Settings"
 import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
@@ -10,10 +10,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+ // Link
 } from "react-router-dom";
-import Post from "./components/post/Post";
-import SinglePost from "./components/singlePost/SinglePost";
+//import Post from "./components/post/Post";
+//import SinglePost from "./components/singlePost/SinglePost";
 
 
 

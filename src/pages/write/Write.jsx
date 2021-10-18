@@ -2,15 +2,15 @@ import "./write.css"
 import { useState } from "react";
 import {db} from '../../firebase'
 import { collection, addDoc } from "firebase/firestore"; 
-import { AirlineSeatIndividualSuiteSharp } from "@material-ui/icons";
+// import { AirlineSeatIndividualSuite Sharp } from "@material-ui/icons";
 
 
 export default function Write() {
-    const [name, setName] = useState("");
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        alert(`The name you entered was: ${name}`);
-      }
+    // const [name, setName] = useState("");
+    // const handleSubmit = (event) => {
+    //     event.preventDefault();
+    //     alert(`The name you entered was: ${name}`);
+    //   }
     console.log(db)
     var initialValues = {
         title: '',
@@ -27,10 +27,9 @@ export default function Write() {
 
     async function submit(e){
         e.preventDefault()
-        const doc = await addDoc(collection(db, 'posts'),{
+        await addDoc(collection(db, 'posts'),{
             title: values.title,description:values.description })
         console.log('done')
-
     }
 
     return (
