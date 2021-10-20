@@ -25,8 +25,8 @@ export default function Write() {
         })
     }
 
-    async function submit(e){
-        e.preventDefault()
+    async function submit(){
+       
         await addDoc(collection(db, 'posts'),{
             title: values.title,description:values.description })
         console.log('done')

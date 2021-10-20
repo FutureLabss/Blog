@@ -6,8 +6,8 @@ import {createUserWithEmailAndPassword} from 'firebase/auth'
 
 export default function Register() {
 
-    const register = (e)=>{
-        e.preventDefault()
+    const register = ()=>{
+       
         const form = document.forms['register']
         const email = form.email.value
         const password =form.password.value

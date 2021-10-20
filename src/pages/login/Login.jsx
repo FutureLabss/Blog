@@ -5,8 +5,8 @@ import {signInWithEmailAndPassword} from "firebase/auth"
 
 export default function Login() {
     
-    const login = (e)=>{
-        e.preventDefault()
+    const login = ()=>{
+      
         const form = document.forms['login']
         const email = form.email.value
         const password =form.password.value
