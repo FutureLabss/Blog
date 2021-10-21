@@ -1,6 +1,7 @@
 import "./post.css"
 import { Link } from "react-router-dom"
 
+
 export default function Post(props) {
     return (
        
@@ -16,7 +17,7 @@ export default function Post(props) {
                     {props.post.title}
                 </span>
                 <hr/>
-                <span className="postDate">20 seconds ago</span>
+                <span className="postDate">10 seconds ago</span>
             </div>
             <p className="postDesc"> {props.post.description} </p>
             </Link>
